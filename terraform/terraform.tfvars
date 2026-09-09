@@ -1,10 +1,10 @@
 env = "np"
 
-project_id = "cio-esr-np-12345"
+project_id = "cio-esr-np-123456"
 
 project_name = "cio-esr-np"
 
-project_number = "1234565678"
+project_number = "1234567"
 
 region = "northamerica-northeast1"
 database_instance_name    = "pgi-esr-st"
@@ -25,7 +25,7 @@ ssl_mode            = "ENCRYPTED_ONLY"
 database_migration_serviceaccount = "compute-instance@gidc-dba-tools-np-32b0f0.iam.gserviceaccount.com"
 consumer_network          = "projects/cdo-cloud-vpc-host-np-d48ee6/global/networks/cloud-svc-network-np"
 deletion_protection = true
-allowed_consumer_projects = ["cio-esr-np-12345","gidc-dba-tools-np-32b0f0","svc-transit-vpc-pr-811269"]
+allowed_consumer_projects = ["cio-esr-np-123456","gidc-dba-tools-np-32b0f0","svc-transit-vpc-pr-811269"]
 database_instance_flags   = {
   "pg-esr-flags" = {
     "cloudsql.iam_authentication" = "on"
