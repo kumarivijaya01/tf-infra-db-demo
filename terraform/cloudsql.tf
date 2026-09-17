@@ -19,7 +19,7 @@ module "pgi-esr-st" {
   backup_start_time       = "06:00"
   backup_location         = var.region
   private_network         = null
-  ipv4_enabled            = true
+  ipv4_enabled            = false
   ssl_mode                = var.ssl_mode
   availability_type       = var.database_availability
   database_flags          = lookup(var.database_instance_flags, "pg-esr-flags")
