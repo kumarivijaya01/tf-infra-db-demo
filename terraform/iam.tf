@@ -34,13 +34,3 @@ resource "google_project_iam_member" "cloudsql_roles" {
   role    = each.value
   member  = "group:dl_clouddba@telus.com"
 }
-
-# IAM update for pgi-esr-np
-
-resource "google_sql_user" "pgi-esr-np-iam-users" {
-  for_each = var.env == "np" ? var.cloud_sql_iam_users : {}
-  project  = var.project_id
-  name     = each.key
-  instance = module.pgi-esr-np.instance_name
-  type     = each.value
-}
